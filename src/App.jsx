@@ -10,6 +10,9 @@ import { Projects } from './components/sections/Projects';
 
 import "./index.css"
 import { Contact } from './components/sections/Contact';
+import Footer from './components/sections/Footer';
+import CyberSecuritySkills from './components/sections/CyberSecuritySkills';
+
 
 
 
@@ -29,9 +32,11 @@ function App() {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <About />
+        <CyberSecuritySkills />
         <LogoAnimation />
         <Projects />
         <Contact />
+        <Footer />
       </div>
 
     </>

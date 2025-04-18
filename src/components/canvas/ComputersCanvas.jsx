@@ -4,7 +4,9 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 
 // Fonction qui charge le modèle 3D avec animation flottante
 const Computer = () => {
-  const { scene } = useGLTF("/desktop_pc/scene.gltf");
+  // ✅ Corrige le chemin pour GitHub Pages
+  const { scene } = useGLTF(import.meta.env.BASE_URL + "desktop_pc/scene.gltf");
+
   const modelRef = useRef(); // 🔁 Référence pour l'animation
 
   useEffect(() => {
@@ -52,4 +54,5 @@ export const ComputersCanvas = () => {
     </Canvas>
   );
 };
+
 

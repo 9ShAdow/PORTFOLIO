@@ -22,7 +22,8 @@ const ComputerCanvas = () => {
   }, []);
 
   const Computer = () => {
-    const { scene } = useGLTF("/desktop_pc/scene.gltf");
+    // ✅ Correction du chemin GLTF pour GitHub Pages
+    const { scene } = useGLTF(import.meta.env.BASE_URL + "desktop_pc/scene.gltf");
 
     useEffect(() => {
       scene.traverse((child) => {

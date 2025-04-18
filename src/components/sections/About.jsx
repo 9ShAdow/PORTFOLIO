@@ -37,43 +37,68 @@ export const About = () => {
           </h2>
 
           <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#5C4033] hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-            <p className="text-gray-300 mb-6">
-              Étudiant en cybersécurité passionné, avec une solide expérience en
-              développement, audit de sécurité, infrastructure réseau et
-              virtualisation. Capable de mettre en œuvre des solutions concrètes,
-              de former, d’automatiser et de répondre à des enjeux réels grâce à une approche polyvalente et orientée résultat.
-            </p>
+  <p className="text-gray-300 mb-6">
+    Étudiant en cybersécurité passionné, avec une solide expérience en
+    audit de sécurité, virtualisation, infrastructure réseau et développement web.
+    Capable de mettre en œuvre des solutions concrètes, de former, d’automatiser
+    et de répondre à des enjeux réels grâce à une approche polyvalente
+    et orientée résultat.
+  </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4"> Frontend</h3>
-                <div className="flex flex-wrap gap-2">
-                  {frontendSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-[#5C4033] text-[#D2B48C] py-1 px-3 rounded-full text-sm transition duration-300 hover:bg-[#D2B48C]/10 hover:text-[#FFEBCD] hover:shadow-[0_0_8px_4px_rgba(210,180,140,0.5)]"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {/* Bloc Cybersecurity */}
+    <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+      <h3 className="text-xl font-bold mb-4">Cybersécurité</h3>
+      <div className="flex flex-wrap gap-2">
+        {[
+          "OWASP",
+          "Nmap",
+          "Burp Suite",
+          "Active Directory",
+          "Intune",
+          "Audit de sécurité",
+          "Durcissement",
+          "EDR / SOAR",
+          "OSINT",
+        ].map((tech, key) => (
+          <span
+            key={key}
+            className="bg-[#5C4033] text-[#D2B48C] py-1 px-3 rounded-full text-sm transition duration-300 hover:bg-[#D2B48C]/10 hover:text-[#FFEBCD] hover:shadow-[0_0_8px_4px_rgba(210,180,140,0.5)]"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
 
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4"> Backend & Infra</h3>
-                <div className="flex flex-wrap gap-2">
-                  {backendSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-[#5C4033] text-[#D2B48C] py-1 px-3 rounded-full text-sm transition duration-300 hover:bg-[#D2B48C]/10 hover:text-[#FFEBCD] hover:shadow-[0_0_8px_4px_rgba(210,180,140,0.5)]"
-                    >
-                      {tech}
-                    </span>
+    {/* Bloc Développement Web */}
+    <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+      <h3 className="text-xl font-bold mb-4">Développement Web</h3>
+      <div className="flex flex-wrap gap-2">
+        {[
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "PHP",
+          "Python",
+          "Node.js",
+          "Django",
+          "Flask",
+          "TailwindCSS",
+        ].map((tech, key) => (
+          <span
+            key={key}
+            className="bg-[#5C4033] text-[#D2B48C] py-1 px-3 rounded-full text-sm transition duration-300 hover:bg-[#D2B48C]/10 hover:text-[#FFEBCD] hover:shadow-[0_0_8px_4px_rgba(210,180,140,0.5)]"
+          >
+            {tech}
+          </span>
                   ))}
                 </div>
               </div>
             </div>
           </div>
+
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#5C4033] hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
